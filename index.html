@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LETRANGER CAFE - Ana Sayfa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>LETRANGER <span>CAFE</span></h1>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-item active">Ana Sayfa</a>
+                <a href="#menu" class="nav-item">Menü</a>
+                <a href="#about" class="nav-item">Hakkımızda</a>
+                <a href="#contact" class="nav-item">İletişim</a>
+                <a href="#" class="nav-item"><i class="fas fa-shopping-cart"></i> Sepet</a>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2 class="hero-title">Tanıdık Bir Lezzet Deneyimi</h2>
+            <p class="hero-subtitle">Dünyanın dört bir yanından gelen özel kahveler, taptaze tatlılar ve sıcak atmosferimizle tanışın</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">MENÜYÜ KEŞFET</a>
+                <a href="#contact" class="btn-secondary">REZERVASYON</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENÜ KATEGORİLERİ -->
+    <section class="menu-section" id="menu">
+        <div class="section-header">
+            <h2 class="section-title">Menümüz</h2>
+            <p class="section-subtitle">Kategorilere tıklayarak lezzetlerimizi keşfedin</p>
+        </div>
+        
+        <div class="categories-container">
+            <!-- KATEGORİ 1: KAHVELER -->
+            <div class="category-card" data-category="kahveler">
+                <div class="category-image">
+                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kahveler">
+                    <div class="category-overlay"></div>
+                </div>
+                <div class="category-content">
+                    <h3 class="category-title"><i class="fas fa-coffee"></i> Kahveler</h3>
+                    <p class="category-desc">Özel çekirdeklerle hazırlanan birbirinden lezzetli kahveler</p>
+                    <span class="category-count">12 Çeşit</span>
+                </div>
+            </div>
+            
+            <!-- KATEGORİ 2: KAHVALTILAR -->
+            <div class="category-card" data-category="kahvaltilar">
+                <div class="category-image">
+                    <img src="khvltjpg.jpg" alt="Kahvaltılar">
+                    <div class="category-overlay"></div>
+                </div>
+                <div class="category-content">
+                    <h3 class="category-title"><i class="fas fa-egg"></i> Kahvaltılar</h3>
+                    <p class="category-desc">Taptaze malzemelerle hazırlanan zengin kahvaltı tabakları</p>
+                    <span class="category-count">8 Çeşit</span>
+                </div>
+            </div>
+            
+            <!-- KATEGORİ 3: TATLILAR -->
+            <div class="category-card" data-category="tatlilar">
+                <div class="category-image">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tatlılar">
+                    <div class="category-overlay"></div>
+                </div>
+                <div class="category-content">
+                    <h3 class="category-title"><i class="fas fa-ice-cream"></i> Tatlılar</h3>
+                    <p class="category-desc">Günlük hazırlanan enfes pastalar ve tatlılar</p>
+                    <span class="category-count">15 Çeşit</span>
+                </div>
+            </div>
+            
+            <!-- KATEGORİ 4: NARGİLELER -->
+            <div class="category-card" data-category="nargileler">
+                <div class="category-image">
+                    <img src="images.jpg"Nargileler">
+                    <div class="category-overlay"></div>
+                </div>
+                <div class="category-content">
+                    <h3 class="category-title"><i class="fas fa-smoking"></i> Nargileler</h3>
+                    <p class="category-desc">Özel meyve aromalı premium nargileler</p>
+                    <span class="category-count">10 Çeşit</span>
+                </div>
+            </div>
+            
+            <!-- KATEGORİ 5: ÇAYLAR -->
+            <div class="category-card" data-category="caylar">
+                <div class="category-image">
+                    <img src="https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Çaylar">
+                    <div class="category-overlay"></div>
+                </div>
+                <div class="category-content">
+                    <h3 class="category-title"><i class="fas fa-mug-hot"></i> Çaylar</h3>
+                    <p class="category-desc">Dünyanın farklı bölgelerinden özel çaylar</p>
+                    <span class="category-count">7 Çeşit</span>
+                </div>
+            </div>
+            
+            <!-- KATEGORİ 6: SOĞUK İÇECEKLER -->
+            <div class="category-card" data-category="soguk-icecekler">
+                <div class="category-image">
+                    <img src="download.jpg" alt="Soğuk İçecekler">
+                    <div class="category-overlay"></div>
+                </div>
+                <div class="category-content">
+                    <h3 class="category-title"><i class="fas fa-glass-whiskey"></i> Soğuk İçecekler</h3>
+                    <p class="category-desc">Yaz günleri için ferahlatıcı içecekler</p>
+                    <span class="category-count">9 Çeşit</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENÜ DETAY KISMI (BAŞLANGIÇTA GİZLİ) -->
+    <div class="menu-detail-container" id="menuDetail">
+        <div class="menu-detail-header">
+            <h2 id="detailCategoryTitle">Kahveler</h2>
+            <button class="close-detail" id="closeDetail">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="menu-items-container">
+            <!-- KAHVELER KATEGORİSİ İÇERİĞİ -->
+            <div class="menu-items" data-category-content="kahveler">
+                <!-- Kahve öğeleri JavaScript ile doldurulacak -->
+            </div>
+            
+            <!-- KAHVALTILAR KATEGORİSİ İÇERİĞİ -->
+            <div class="menu-items" data-category-content="kahvaltilar">
+                <!-- Kahvaltı öğeleri JavaScript ile doldurulacak -->
+            </div>
+            
+            <!-- TATLILAR KATEGORİSİ İÇERİĞİ -->
+            <div class="menu-items" data-category-content="tatlilar">
+                <!-- Tatlı öğeleri JavaScript ile doldurulacak -->
+            </div>
+            
+            <!-- NARGİLELER KATEGORİSİ İÇERİĞİ -->
+            <div class="menu-items" data-category-content="nargileler">
+                <!-- Nargile öğeleri JavaScript ile doldurulacak -->
+            </div>
+            
+            <!-- ÇAYLAR KATEGORİSİ İÇERİĞİ -->
+            <div class="menu-items" data-category-content="caylar">
+                <!-- Çay öğeleri JavaScript ile doldurulacak -->
+            </div>
+            
+            <!-- SOĞUK İÇECEKLER KATEGORİSİ İÇERİĞİ -->
+            <div class="menu-items" data-category-content="soguk-icecekler">
+                <!-- Soğuk içecek öğeleri JavaScript ile doldurulacak -->
+            </div>
+        </div>
+    </div>
+
+    <!-- HAKKIMIZDA BÖLÜMÜ -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cafe İçi">
+            </div>
+            
+            <div class="about-content">
+                <h2 class="section-title">Hakkımızda</h2>
+                <div class="about-text">
+                    <p>LETRANGER CAFE olarak 2025 yılından beri Van'ın kalbinde, misafirlerimize sıra dışı bir kahve sunuyoruz.</p>
+                    
+                    <p>"Tanıdık" olma fikrinden yola çıkarak, dünyanın dört bir yanından getirdiğimiz özel kahve çekirdekleri, nadir çay çeşitleri ve şeflerimizin özenle hazırladığı tatlılarla farklı lezzetleri bir araya getiriyoruz.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Premium Kalite</h4>
+                            <p>Tüm ürünlerimiz günlük ve taze</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h4>Uzman Ekip</h4>
+                            <p>Alanında uzman barista ve şefler</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Sevgiyle Hazırlanır</h4>
+                            <p>Her ürün özenle hazırlanır</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İLETİŞİM BÖLÜMÜ -->
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">İletişim</h2>
+            <p class="section-subtitle">Bize ulaşın, rezervasyon yaptırın</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Adres</h4>
+                        <p>Kültür Naci sokak DEM parti ilerisi LETRANGER CAFE<br>İpekyolu/ van</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Telefon</h4>
+                        <p>(0212) 123 45 67<br>WhatsApp: (0555) 123 45 67</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Çalışma Saatleri</h4>
+                        <p>Pazartesi - Pazar<br>08:00 - 02:00</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>E-posta</h4>
+                        <p>info@letrangercafe.com<br>rezervasyon@letrangercafe.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="reservationForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Adınız Soyadınız" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="tel" placeholder="Telefon Numaranız" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" placeholder="E-posta Adresiniz" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="date" placeholder="Tarih" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="time" placeholder="Saat" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="number" placeholder="Kişi Sayısı" min="1" max="20" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">REZERVASYON YAP</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>LETRANGER <span>CAFE</span></h3>
+                <p>Tanıdık bir lezzet, tanıdık bir sıcaklık</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/letrangercafe1/" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+                <a href="https://www.instagram.com/letrangercafe1/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/letrangercafe1/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/letrangercafe1/" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home">Ana Sayfa</a>
+                <a href="#menu">Menü</a>
+                <a href="#about">Hakkımızda</a>
+                <a href="#contact">İletişim</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; Producer by KAYX </p>
+            <p>Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- SEPET MODALI (BAŞLANGIÇTA GİZLİ) -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-cart"></i> Sepetiniz</h3>
+                <button class="close-cart" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Sepet öğeleri JavaScript ile doldurulacak -->
+                <p class="empty-cart">Sepetiniz boş</p>
+            </div>
+            <div class="cart-total">
+                <h4>Toplam: <span id="cartTotal">₺0.00</span></h4>
+                <button class="btn-primary" id="checkoutBtn">Siparişi Tamamla</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Dosyaları -->
+    <script>
+        // Menü verileri JavaScript ile doldurulacak
+        // Bu kısım CSS'ten sonra tamamlanacak
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
