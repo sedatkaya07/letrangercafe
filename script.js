@@ -1,56 +1,66 @@
 // ===== MENÜ VERİLERİ =====
 const menuData = {
-    kahveler: [
-        { id: 1, name: "Americano", price: 90, desc: "Özel çekirdeklerden double shot espresso ile hazırlanır", img: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 2, name: "Espresso", price: 70, desc: "Tek shot, yoğun aromalı klasik espresso", img: "https://images.unsplash.com/photo-1510707577719-ae7c9b788690?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 3, name: "Latte", price: 110, desc: "Bol sütlü, yumuşak içimli latte", img: "https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 4, name: "Cappuccino", price: 100, desc: "Köpüklü, İtalyan usulü cappuccino", img: "https://images.unsplash.com/photo-1534778101976-62847782c213?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 5, name: "Mocha", price: 120, desc: "Çikolata ve espresso karışımı", img: "https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 6, name: "Türk Kahvesi", price: 60, desc: "Geleneksel usulde pişirilmiş", img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 7, name: "Filtre Kahve", price: 85, desc: "Özel blend filtre kahve", img: "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 8, name: "French Press", price: 95, desc: "Tam çekirdek French press", img: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
-    ],
-    
+
     kahvaltilar: [
-        { id: 9, name: "Van Kahvaltısı", price: 250, desc: "Özel Van peynirleri, otlu peynir, bal, kaymak", img: "https://images.unsplash.com/photo-1551216223-4b7d2c5e3541?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 10, name: "Serpme Kahvaltı", price: 180, desc: "Zengin serpme kahvaltı tabağı", img: "https://images.unsplash.com/photo-1559661175-b0c0a8b5e4de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 11, name: "Menemen", price: 100, desc: "Özel baharatlı, köy yumurtalı", img: "https://images.unsplash.com/photo-1592415479493-75df1c6d7532?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 12, name: "Omlet", price: 90, desc: "Peynirli, mantarlı, sebzeli", img: "https://images.unsplash.com/photo-1551782450-17144efb9c50?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 13, name: "Sahanda Yumurta", price: 70, desc: "Sucuklu veya pastırmalı", img: "https://images.unsplash.com/photo-1588347818038-9d6c1dfd8e9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 14, name: "Pankek", price: 110, desc: "Akçaağaç şurubu ve meyvelerle", img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
+        { id: 1, name: "Kavurma", price: 300, desc: "Özel kavurma", img: "https://images.unsplash.com/photo-1604908176997-431b4b2d2c24?w=800" },
+        { id: 2, name: "Köfte Ekmek", price: 300, desc: "Izgara köfte", img: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=800" },
+        { id: 3, name: "Burger", price: 300, desc: "Özel burger", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800" },
+        { id: 4, name: "Kebap Dürüm", price: 200, desc: "Adana dürüm", img: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800" },
+        { id: 5, name: "Sucuklu Kaşarlı Tost", price: 200, desc: "Bol sucuk", img: "https://images.unsplash.com/photo-1604908554027-35c03c4a8c7f?w=800" },
+        { id: 6, name: "Makarna Çeşitleri", price: 160, desc: "Karışık makarna", img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800" },
+        { id: 7, name: "Tavuk Dürüm", price: 150, desc: "Izgara tavuk", img: "https://images.unsplash.com/photo-1605478371313-5b8f8e5b6d2d?w=800" },
+        { id: 8, name: "Çiğköfte", price: 150, desc: "Acılı çiğköfte", img: "https://images.unsplash.com/photo-1604908813190-8a8b8b8b8b8b?w=800" },
+        { id: 9, name: "Gözleme", price: 150, desc: "El açması", img: "https://images.unsplash.com/photo-1604908176997-431b4b2d2c24?w=800" }
     ],
-    
+
     tatlilar: [
-        { id: 15, name: "Cheesecake", price: 120, desc: "Çilek soslu New York usulü", img: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 16, name: "Tiramisu", price: 110, desc: "İtalyan usulü klasik tiramisu", img: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 17, name: "Brownie", price: 85, desc: "Bol çikolatalı, cevizli", img: "https://images.unsplash.com/photo-1606313564200-75fae8f0ad3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 18, name: "Profiterol", price: 95, desc: "Bol çikolata soslu", img: "https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 19, name: "Baklava", price: 100, desc: "Antep fıstıklı özel baklava", img: "https://images.unsplash.com/photo-1519689680058-324335c24eba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 20, name: "Sufle", price: 130, desc: "Sıcak çikolatalı sufle", img: "https://images.unsplash.com/photo-1624353365286-3f8d62dadadf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
+        { id: 10, name: "Marlenka", price: 300, desc: "", img: "https://images.unsplash.com/photo-1601972599720-36938d4ecd31?w=800" },
+        { id: 11, name: "Fıstık Rüyası", price: 250, desc: "", img: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=800" },
+        { id: 12, name: "Profitrol Çikolatalı", price: 250, desc: "", img: "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=800" },
+        { id: 13, name: "Sufle Çikolatalı", price: 250, desc: "", img: "https://images.unsplash.com/photo-1624353365286-3f8d62dadadf?w=800" },
+        { id: 14, name: "Mozaik Çikolata", price: 250, desc: "", img: "https://images.unsplash.com/photo-1606313564200-75fae8f0ad3b?w=800" },
+        { id: 15, name: "Cheesecake Frambuaz", price: 250, desc: "", img: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=800" },
+        { id: 16, name: "Nutellalı Makarna", price: 250, desc: "", img: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800" },
+        { id: 17, name: "Tiramisu", price: 250, desc: "", img: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=800" },
+        { id: 18, name: "Kırmızı Kadife Kek", price: 250, desc: "", img: "https://images.unsplash.com/photo-1605475122117-4d4b6f1d5d88?w=800" },
+        { id: 19, name: "Ağlayan Kek", price: 200, desc: "", img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" },
+        { id: 20, name: "Sütlaç", price: 200, desc: "", img: "https://images.unsplash.com/photo-1604908176997-431b4b2d2c24?w=800" },
+        { id: 21, name: "Browni", price: 150, desc: "", img: "https://images.unsplash.com/photo-1606313564200-75fae8f0ad3b?w=800" }
     ],
-    
-    nargileler: [
-        { id: 21, name: "Elma Nargile", price: 150, desc: "Klasik elma aromalı", img: "https://images.unsplash.com/photo-1595515119566-d2eaff6c7b31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 22, name: "Çilek Nargile", price: 160, desc: "Taze çilek aromalı", img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 23, name: "Karpuz Nargile", price: 155, desc: "Yaz mevsimine özel", img: "https://images.unsplash.com/photo-1519689373023-dd07c7987656?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 24, name: "Mint Nargile", price: 145, desc: "Ferahlatıcı nane aromalı", img: "https://images.unsplash.com/photo-1523293836414-f04e712e1f3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 25, name: "Karışık Meyve", price: 170, desc: "4 farklı meyve aroması", img: "https://images.unsplash.com/photo-1531168556467-80c61c7cf4f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
+
+    kahveler: [
+        { id: 22, name: "Cappucino", price: 160, desc: "", img: "https://images.unsplash.com/photo-1534778101976-62847782c213?w=800" },
+        { id: 23, name: "Mocha", price: 155, desc: "", img: "https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?w=800" },
+        { id: 24, name: "Cafe Latte", price: 150, desc: "", img: "https://images.unsplash.com/photo-1561047029-3000c68339ca?w=800" },
+        { id: 25, name: "Americano", price: 130, desc: "", img: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800" },
+        { id: 26, name: "Türk Kahvesi", price: 120, desc: "", img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af?w=800" },
+        { id: 27, name: "Filtre Kahve", price: 110, desc: "", img: "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?w=800" },
+        { id: 28, name: "Espresso", price: 75, desc: "", img: "https://images.unsplash.com/photo-1510707577719-ae7c9b788690?w=800" }
     ],
-    
+
     caylar: [
-        { id: 26, name: "Earl Grey", price: 50, desc: "Bergamot aromalı siyah çay", img: "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 27, name: "Yeşil Çay", price: 45, desc: "Japon usulü yeşil çay", img: "https://images.unsplash.com/photo-1593246149226-2af20f0f8c80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 28, name: "Ihlamur", price: 40, desc: "Doğal ıhlamur çiçeği", img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 29, name: "Kuşburnu", price: 42, desc: "C vitamini deposu", img: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 30, name: "Adaçayı", price: 44, desc: "Rahatlatıcı adaçayı", img: "https://images.unsplash.com/photo-1597481499753-6e3a6d69d2c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
+        { id: 29, name: "Bitki Çayı", price: 145, desc: "", img: "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=800" },
+        { id: 30, name: "Meyveli Çay", price: 70, desc: "", img: "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?w=800" },
+        { id: 31, name: "Salon Çay", price: 40, desc: "", img: "https://images.unsplash.com/photo-1523920290228-4f321a939b4c?w=800" },
+        { id: 32, name: "Okey Çay", price: 30, desc: "", img: "https://images.unsplash.com/photo-1523920290228-4f321a939b4c?w=800" }
     ],
-    
+
     "soguk-icecekler": [
-        { id: 31, name: "Limonata", price: 55, desc: "Taze sıkılmış limon", img: "https://images.unsplash.com/photo-1621263764928-df1444c5e859?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 32, name: "Mojito", price: 65, desc: "Alkolsüz taze nane mojito", img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 33, name: "Soğuk Kahve", price: 85, desc: "Buzlu soğuk kahve", img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 34, name: "Milkshake", price: 90, desc: "Çikolatalı veya çilekli", img: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 35, name: "Meyve Suyu", price: 60, desc: "Portakal, elma, havuç", img: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
+        { id: 33, name: "Karamel Frappuccino", price: 150, desc: "", img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800" },
+        { id: 34, name: "Çilek Frappuccino", price: 150, desc: "", img: "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=800" },
+        { id: 35, name: "Vanilya Frappuccino", price: 150, desc: "", img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800" },
+        { id: 36, name: "Yaban Mersini Boba", price: 130, desc: "", img: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800" },
+        { id: 37, name: "Çilek Boba", price: 130, desc: "", img: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800" },
+        { id: 38, name: "Milkshake Çikolatalı", price: 200, desc: "", img: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800" },
+        { id: 39, name: "Milkshake Çilekli", price: 200, desc: "", img: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800" },
+        { id: 40, name: "Milkshake Muzlu", price: 200, desc: "", img: "https://images.unsplash.com/photo-1577805947697-89e18249d767?w=800" }
+    ],
+
+    nargileler: [
+        { id: 41, name: "Nargile Standart", price: 350, desc: "", img: "https://images.unsplash.com/photo-1595515119566-d2eaff6c7b31?w=800" },
+        { id: 42, name: "Nargile Lüle", price: 150, desc: "", img: "https://images.unsplash.com/photo-1595515119566-d2eaff6c7b31?w=800" },
+        { id: 43, name: "Nargile Aroma", price: 145, desc: "", img: "https://images.unsplash.com/photo-1595515119566-d2eaff6c7b31?w=800" },
+        { id: 44, name: "Sigara", price: 130, desc: "", img: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=800" }
     ]
 };
 
