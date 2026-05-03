@@ -18,7 +18,7 @@ const menuData = {
         { id: 11, name: "Fıstık Rüyası", price: 250, desc: "Antep fıstıklı özel pasta", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZqhyUc1K5tf7kKDktaSd9VBnD91Zxu-2Pw&s" },
         { id: 12, name: "Profiterol Çikolatalı", price: 250, desc: "Kremalı ve çikolata soslu", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYkA_ozHrN5GLLIayI_ty_DCIEXP02eXTyrw&s" },
         { id: 13, name: "Sufle Çikolatalı", price: 250, desc: "Sıcak çikolatalı sufle", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR_ICwiZlxHLgYwXl2NuMka7h1CIK2mbNy6A&s" },
-        { id: 14, name: "Mozaik Pasta", price: 250, desc: "Klasik mozaik pasta", img: "https://images.unsplash.com/photo-1606313564200-75fae8f0ad3b?w=800" },
+        { id: 14, name: "Mozaik Pasta", price: 250, desc: "Klasik mozaik pasta", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNWTa-G5juXu8wSyE0AmMyon4hOWDNWWjTcg&s" },
         { id: 15, name: "Cheesecake (Frambuaz)", price: 250, desc: "Frambuaz soslu cheesecake", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgxss6oUqlQpp1CkGg0PVjyBMteeIUdo87-g&s" },
         { id: 16, name: "Nutellalı Pasta", price: 250, desc: "Fındıklı Nutella pasta", img: "https://i.nefisyemektarifleri.com/2023/06/04/findikli-cikolatali-pasta-tarifi.jpg" },
         { id: 17, name: "Tiramisu", price: 250, desc: "İtalyan klasiği tiramisu", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxgn-heQD-qt871TjeSc_kKIEs7rY8JSXhYg&s" },
@@ -79,10 +79,10 @@ const menuData = {
     ],
 
     nargileler: [
-        { id: 90, name: "Nargile (Standart)", price: 350, desc: "Premium standart nargile", img: "https://images.unsplash.com/photo-1595515119566-d2eaff6c7b31?w=800" },
-        { id: 91, name: "Nargile (Lüle Başlığı)", price: 150, desc: "Özel lüle başlığı", img: "https://images.unsplash.com/photo-1595515119566-d2eaff6c7b31?w=800" },
-        { id: 92, name: "Nargile Aromaları", price: 145, desc: "Çeşitli nargile aromaları", img: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=800" },
-        { id: 93, name: "Sigara", price: 130, desc: "Çeşitli sigara markaları", img: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=800" }
+        { id: 90, name: "Nargile (Standart)", price: 350, desc: "Premium standart nargile", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDSRVbuqlmsZ5ZFI0WFsJe6bCWb9yS1CmHOw&s" },
+        { id: 91, name: "Nargile (Lüle Başlığı)", price: 150, desc: "Özel lüle başlığı", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDSRVbuqlmsZ5ZFI0WFsJe6bCWb9yS1CmHOw&s" },
+        { id: 92, name: "Nargile Aromaları", price: 145, desc: "Çeşitli nargile aromaları", img: "https://www.odumantr.com/Data/Blog/63.jpg" },
+        { id: 93, name: "Sigara", price: 130, desc: "Çeşitli sigara markaları", img: "https://ertugrulonen.com/wp-content/uploads/2018/02/Tekel.jpg" }
     ]
 };
 
