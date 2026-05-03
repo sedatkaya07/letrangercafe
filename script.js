@@ -590,3 +590,61 @@ function updateCartBadge() {
 
 // Mevcut updateCart fonksiyonunun içinde updateCartBadge çağrılıyor zaten
 // Ama emin olmak için updateCart fonksiyonunu güncellemeye gerek yok
+// ===== MASA SEÇİMİ (75 MASA) =====
+let selectedTable = null;
+
+// 1'den 75'e kadar masa butonları oluştur
+const tableNumbersContainer = document.getElementById('tableNumbers');
+if (tableNumbersContainer) {
+    for (let i = 1; i <= 75; i++) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'table-btn';
+        btn.setAttribute('data-table', i);
+        btn.textContent = `Masa ${i}`;
+        tableNumbersContainer.appendChild(btn);
+    }
+}
+
+// Masa butonlarına tıklama olayı
+document.addEventListener('click', function(e) {
+    if (e.target.classList && e.target.classList.contains('table-btn')) {
+        document.querySelectorAll('.table-btn').forEach(btn => {
+            btn.classList.remove('selected');
+        });
+        e.target.classList.add('selected');
+        selectedTable = e.target.getAttribute('data-table');
+    }
+});
+
+// Sipariş tamamlama butonu
+const checkoutBtnElement = document.getElementById('checkoutBtn');
+if (checkoutBtnElement) {
+    checkoutBtnElement.onclick = () => {
+        if (cart.length === 0) {
+            showNotification('Sepetiniz boş!');
+            return;
+        }
+        
+        if (!selectedTable) {
+            showNotification('Lütfen bir masa seçin!');
+            return;
+        }
+        
+        const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        const orderSummary = cart.map(item => 
+            `${item.name} x${item.quantity} = ₺${item.price * item.quantity}`
+        ).join('\n');
+        
+        alert(`🏠 MASA ${selectedTable}\n━━━━━━━━━━━━━━━━━━━━\n${orderSummary}\n━━━━━━━━━━━━━━━━━━━━\n💰 TOPLAM: ₺${total.toFixed(2)}\n\n✅ Siparişiniz alındı! Teşekkür ederiz.`);
+        
+        cart = [];
+        selectedTable = null;
+        updateCart();
+        cartModal.classList.remove('active');
+        
+        document.querySelectorAll('.table-btn').forEach(btn => {
+            btn.classList.remove('selected');
+        });
+    };
+}
