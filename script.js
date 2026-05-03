@@ -520,3 +520,26 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+// ===== MENÜYÜ SAĞA KAYDIRARAK KAPATMA (SWIPE RIGHT) =====
+const menuDetailForSwipe = document.getElementById('menuDetail');
+let touchStartX = 0;
+let touchEndX = 0;
+let touchStartY = 0;
+
+menuDetailForSwipe.addEventListener('touchstart', function(e) {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+}, { passive: true });
+
+menuDetailForSwipe.addEventListener('touchmove', function(e) {
+    touchEndX = e.touches[0].clientX;
+    const touchCurrentY = e.touches[0].clientY;
+    const deltaY = Math.abs(touchCurrentY - touchStartY);
+    const deltaX = touchEndX - touchStartX;
+    
+    // Sadece yatay kaydırma ise (dikey kaydırmadan ayırt etmek için)
+    if (deltaX > 50 && deltaY < 30) {
+        e.preventDefault();
+        closeMenuDetail();
+    }
+}, { passive: false });
