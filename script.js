@@ -537,7 +537,7 @@ menuDetailForSwipe.addEventListener('touchend', function(e) {
     const deltaY = Math.abs(touchEndY - touchStartY);
     
     // Sağa kaydırma: 80px'den fazla VE dikey hareket 40px'den az ise
-    if (deltaX > 80 && deltaY < 40) {
+    if (deltaX > 130 && deltaY < 80) {
         closeMenuDetail();
     }
 }, { passive: true });
