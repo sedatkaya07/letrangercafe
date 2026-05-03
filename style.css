@@ -12,7 +12,79 @@
     --border-radius: 15px;
     --border-radius-sm: 10px;
 }
+/* FLOATING CART BUTTON - SABIT SEPET BUTONU */
+.floating-cart {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
 
+.floating-cart:hover {
+    transform: scale(1.1);
+    background-color: var(--dark-color);
+}
+
+.floating-cart .cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #e74c3c;
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Navbar'daki Sepeti Görüntüle butonu stili */
+.cart-btn {
+    background-color: var(--primary-color);
+    padding: 8px 18px;
+    border-radius: 30px;
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+    background-color: var(--dark-color);
+    transform: scale(1.05);
+}
+
+.cart-btn i {
+    color: white !important;
+}
+
+/* Mobilde */
+@media (max-width: 768px) {
+    .floating-cart {
+        bottom: 20px;
+        right: 20px;
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+    }
+    
+    .cart-btn {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
 /* Sağa kaydırma için hafif gölge efekti (isteğe bağlı) */
 .menu-detail-container {
     transition: transform 0.2s ease;
