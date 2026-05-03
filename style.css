@@ -13,11 +13,13 @@
     --border-radius-sm: 10px;
 }
 
-/* Sayfa kaydırma kilidi */
-body.menu-open {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
+/* Sağa kaydırma için hafif gölge efekti (isteğe bağlı) */
+.menu-detail-container {
+    transition: transform 0.2s ease;
+}
+
+.menu-detail-container:active {
+    transform: translateX(5px);
 }
 * {
     margin: 0;
