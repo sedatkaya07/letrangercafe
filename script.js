@@ -1,67 +1,91 @@
 // ===== MENÜ VERİLERİ =====
 const menuData = {
 
-    yemekler: [
-        { id: 1, name: "Kavurma", price: 300, img: "https://images.unsplash.com/photo-1604908176997-431b4b2d2c24?w=800" },
-        { id: 2, name: "Köfte Ekmek", price: 300, img: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=800" },
-        { id: 3, name: "Burger", price: 300, img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800" },
-        { id: 4, name: "Kebab Dürüm", price: 200, img: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800" },
-        { id: 5, name: "Sucuklu Kaşarlı Tost", price: 200, img: "https://images.unsplash.com/photo-1604908554027-35c03c4a8c7f?w=800" },
-        { id: 6, name: "Makarna Çeşitleri", price: 160, img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800" },
-        { id: 7, name: "Tavuk Dürüm", price: 150, img: "https://images.unsplash.com/photo-1605478371313-5b8f8e5b6d2d?w=800" },
-        { id: 8, name: "Çiğköfte", price: 150, img: "https://images.unsplash.com/photo-1604908813190-8a8b8b8b8b8b?w=800" },
-        { id: 9, name: "Gözleme", price: 150, img: "https://images.unsplash.com/photo-1604908176997-431b4b2d2c24?w=800" }
+    kahvaltilar: [
+        { id: 1, name: "Kavurma", price: 300, desc: "Özel kavurma", img: "https://images.unsplash.com/photo-1604908176997-431b4b2d2c24?w=800" },
+        { id: 2, name: "Köfte Ekmek", price: 300, desc: "Izgara köfte", img: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=800" },
+        { id: 3, name: "Burger", price: 300, desc: "Özel burger", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800" },
+        { id: 4, name: "Kebab Dürüm", price: 200, desc: "Adana dürüm", img: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800" },
+        { id: 5, name: "Sucuklu Kaşarlı Tost", price: 200, desc: "Bol sucuk ve kaşar", img: "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=800" },
+        { id: 6, name: "Makarna Çeşitleri", price: 160, desc: "Günlük makarna çeşitleri", img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800" },
+        { id: 7, name: "Tavuk Dürüm", price: 150, desc: "Izgara tavuk dürüm", img: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800" },
+        { id: 8, name: "Çiğköfte", price: 150, desc: "Acılı çiğköfte dürüm", img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800" },
+        { id: 9, name: "Gözleme", price: 150, desc: "El açması taze gözleme", img: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=800" }
     ],
 
     tatlilar: [
-        { id: 10, name: "Marlenka", price: 300, img: "https://images.unsplash.com/photo-1601972599720-36938d4ecd31?w=800" },
-        { id: 11, name: "Fıstık Rüyası", price: 250, img: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=800" },
-        { id: 12, name: "Profiterol Çikolatalı", price: 250, img: "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=800" },
-        { id: 13, name: "Sufle Çikolatalı", price: 250, img: "https://images.unsplash.com/photo-1624353365286-3f8d62dadadf?w=800" },
-        { id: 14, name: "Mozaik Pasta", price: 250, img: "https://images.unsplash.com/photo-1606313564200-75fae8f0ad3b?w=800" },
-        { id: 15, name: "Cheesecake Frambuaz", price: 250, img: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=800" },
-        { id: 16, name: "Nutellalı Pasta", price: 250, img: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800" },
-        { id: 17, name: "Tiramisu", price: 250, img: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=800" },
-        { id: 18, name: "Red Velvet Cake", price: 250, img: "https://images.unsplash.com/photo-1605475122117-4d4b6f1d5d88?w=800" },
-        { id: 19, name: "Pasta Latte Mono", price: 250, img: "https://images.unsplash.com/photo-1601972599720-36938d4ecd31?w=800" },
-        { id: 20, name: "Rella Cocostar", price: 250, img: "https://images.unsplash.com/photo-1601972599720-36938d4ecd31?w=800" },
-        { id: 21, name: "Ağlayan Kek", price: 200, img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" },
-        { id: 22, name: "Sütlaç", price: 200, img: "https://images.unsplash.com/photo-1604908176997-431b4b2d2c24?w=800" },
-        { id: 23, name: "Brownie", price: 150, img: "https://images.unsplash.com/photo-1606313564200-75fae8f0ad3b?w=800" }
+        { id: 10, name: "Marlenka", price: 300, desc: "Balkabaklı çok katlı pasta", img: "https://images.unsplash.com/photo-1601972599720-36938d4ecd31?w=800" },
+        { id: 11, name: "Fıstık Rüyası", price: 250, desc: "Antep fıstıklı özel pasta", img: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=800" },
+        { id: 12, name: "Profiterol Çikolatalı", price: 250, desc: "Kremalı ve çikolata soslu", img: "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=800" },
+        { id: 13, name: "Sufle Çikolatalı", price: 250, desc: "Sıcak çikolatalı sufle", img: "https://images.unsplash.com/photo-1624353365286-3f8d62dadadf?w=800" },
+        { id: 14, name: "Mozaik Pasta", price: 250, desc: "Klasik mozaik pasta", img: "https://images.unsplash.com/photo-1606313564200-75fae8f0ad3b?w=800" },
+        { id: 15, name: "Cheesecake (Frambuaz)", price: 250, desc: "Frambuaz soslu cheesecake", img: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=800" },
+        { id: 16, name: "Nutellalı Pasta", price: 250, desc: "Fındıklı Nutella pasta", img: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800" },
+        { id: 17, name: "Tiramisu", price: 250, desc: "İtalyan klasiği tiramisu", img: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=800" },
+        { id: 18, name: "Red Velvet Cake", price: 250, desc: "Kadife dokulu kırmızı kek", img: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=800" },
+        { id: 19, name: "Pasta Latte Mono", price: 250, desc: "Özel pasta latte", img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" },
+        { id: 20, name: "Rella Cocostar", price: 250, desc: "Hindistan cevizli özel tatlı", img: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800" },
+        { id: 21, name: "Ağlayan Kek", price: 200, desc: "İçi dolu ıslak kek", img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" },
+        { id: 22, name: "Sütlaç", price: 200, desc: "Fırında sütlaç", img: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800" },
+        { id: 23, name: "Brownie", price: 150, desc: "Çikolatalı ıslak brownie", img: "https://images.unsplash.com/photo-1606313564200-75fae8f0ad3b?w=800" }
     ],
 
-    sicak: [
-        { id: 30, name: "Cappuccino", price: 160, img: "https://images.unsplash.com/photo-1534778101976-62847782c213?w=800" },
-        { id: 31, name: "Mocha", price: 155, img: "https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?w=800" },
-        { id: 32, name: "Cafe Latte", price: 150, img: "https://images.unsplash.com/photo-1561047029-3000c68339ca?w=800" },
-        { id: 33, name: "Flat White", price: 150, img: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800" },
-        { id: 34, name: "Americano", price: 130, img: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800" },
-        { id: 35, name: "Türk Kahvesi", price: 120, img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af?w=800" },
-        { id: 36, name: "Çay", price: 40, img: "https://images.unsplash.com/photo-1523920290228-4f321a939b4c?w=800" }
+    kahveler: [
+        { id: 30, name: "Cappuccino", price: 160, desc: "Köpüklü espresso ve süt", img: "https://images.unsplash.com/photo-1534778101976-62847782c213?w=800" },
+        { id: 31, name: "Mocha", price: 155, desc: "Çikolatalı kahve", img: "https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?w=800" },
+        { id: 32, name: "Cafe Latte", price: 150, desc: "Sütlü espresso", img: "https://images.unsplash.com/photo-1561047029-3000c68339ca?w=800" },
+        { id: 33, name: "Flat White", price: 150, desc: "Yoğun sütlü espresso", img: "https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800" },
+        { id: 34, name: "Sahlep", price: 150, desc: "Sıcak ve kremsi sahlep", img: "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=800" },
+        { id: 35, name: "White Chocolate Mocha", price: 145, desc: "Beyaz çikolatalı mocha", img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=800" },
+        { id: 36, name: "Caramel Macchiato", price: 145, desc: "Karamelli macchiato", img: "https://images.unsplash.com/photo-1485808191679-5f86510bd9d7?w=800" },
+        { id: 37, name: "Gold Chocolate Mocha", price: 145, desc: "Altın çikolatalı özel mocha", img: "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?w=800" },
+        { id: 38, name: "Long Black", price: 140, desc: "Sıcak su üstüne espresso", img: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800" },
+        { id: 39, name: "Spiced Mango Latte", price: 140, desc: "Baharatlı mango latte", img: "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800" },
+        { id: 40, name: "Cookie Latte", price: 140, desc: "Kurabiye aromalı latte", img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800" },
+        { id: 41, name: "Macadamia Latte", price: 140, desc: "Macadamia sütlü latte", img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800" },
+        { id: 42, name: "Americano", price: 130, desc: "Espresso ve sıcak su", img: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800" },
+        { id: 43, name: "Toffee Nut Latte", price: 130, desc: "Fındıklı toffee latte", img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=800" },
+        { id: 44, name: "Fruity Latte", price: 130, desc: "Meyveli özel latte", img: "https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=800" },
+        { id: 45, name: "Türk Kahvesi", price: 120, desc: "Geleneksel Türk kahvesi", img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af?w=800" },
+        { id: 46, name: "Sıcak Çikolata", price: 120, desc: "Kremsi sıcak çikolata", img: "https://images.unsplash.com/photo-1517578239113-b03992dcdd25?w=800" },
+        { id: 47, name: "Filtre Kahve", price: 110, desc: "Günlük filtre kahve", img: "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?w=800" },
+        { id: 48, name: "Double Espresso", price: 95, desc: "Çift shot espresso", img: "https://images.unsplash.com/photo-1510707577719-ae7c9b788690?w=800" },
+        { id: 49, name: "Süt", price: 90, desc: "Sıcak ya da soğuk süt", img: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=800" },
+        { id: 50, name: "Espresso", price: 75, desc: "Tek shot espresso", img: "https://images.unsplash.com/photo-1510707577719-ae7c9b788690?w=800" }
     ],
 
-    soguk: [
-        { id: 40, name: "Caramel Frappuccino", price: 150, img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800" },
-        { id: 41, name: "Strawberry Frappuccino", price: 150, img: "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=800" },
-        { id: 42, name: "Vanilla Frappuccino", price: 150, img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800" },
-        { id: 43, name: "Blueberry Boba", price: 130, img: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800" },
-        { id: 44, name: "Strawberry Boba", price: 130, img: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800" }
+    caylar: [
+        { id: 60, name: "Bitki Çayı", price: 145, desc: "Doğal bitki çayı çeşitleri", img: "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=800" },
+        { id: 61, name: "Meyveli Çay (Salon)", price: 70, desc: "Salon meyveli çay", img: "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?w=800" },
+        { id: 62, name: "Meyveli Çay (Okey)", price: 50, desc: "Okey masası meyveli çay", img: "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?w=800" },
+        { id: 63, name: "Çay (Fincan)", price: 50, desc: "Demli çay fincan", img: "https://images.unsplash.com/photo-1523920290228-4f321a939b4c?w=800" },
+        { id: 64, name: "Çay (Salon)", price: 40, desc: "Salon çayı", img: "https://images.unsplash.com/photo-1523920290228-4f321a939b4c?w=800" },
+        { id: 65, name: "Çay (Okey)", price: 30, desc: "Okey masası çayı", img: "https://images.unsplash.com/photo-1523920290228-4f321a939b4c?w=800" }
     ],
 
-    milkshake: [
-        { id: 50, name: "Çikolatalı Milkshake", price: 200, img: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800" },
-        { id: 51, name: "Vanilyalı Milkshake", price: 200, img: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800" },
-        { id: 52, name: "Çilekli Milkshake", price: 200, img: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800" },
-        { id: 53, name: "Muzlu Milkshake", price: 200, img: "https://images.unsplash.com/photo-1577805947697-89e18249d767?w=800" }
+    "soguk-icecekler": [
+        { id: 70, name: "Caramel Cream Frappuccino", price: 150, desc: "Karamel kremalı frappuccino", img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800" },
+        { id: 71, name: "Strawberry Cream Frappuccino", price: 150, desc: "Çilek kremalı frappuccino", img: "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=800" },
+        { id: 72, name: "Vanilla Cream Frappuccino", price: 150, desc: "Vanilya kremalı frappuccino", img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800" },
+        { id: 73, name: "Blueberry Boba", price: 130, desc: "Yaban mersini boba tea", img: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800" },
+        { id: 74, name: "Strawberry Boba", price: 130, desc: "Çilek boba tea", img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" },
+        { id: 75, name: "Coffee Boba", price: 130, desc: "Kahveli boba tea", img: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800" },
+        { id: 76, name: "Honey Milk Boba", price: 130, desc: "Ballı sütlü boba tea", img: "https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=800" },
+        { id: 77, name: "Bubblegum Jelly", price: 130, desc: "Sakız aromalı jelly içecek", img: "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800" },
+        { id: 78, name: "Çikolatalı Milkshake", price: 200, desc: "Kremalı çikolatalı milkshake", img: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800" },
+        { id: 79, name: "Vanilyalı Milkshake", price: 200, desc: "Kremsi vanilya milkshake", img: "https://images.unsplash.com/photo-1577805947697-89e18249d767?w=800" },
+        { id: 80, name: "Çilekli Milkshake", price: 200, desc: "Taze çilekli milkshake", img: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800" },
+        { id: 81, name: "Muzlu Milkshake", price: 200, desc: "Kremalı muzlu milkshake", img: "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=800" }
     ],
 
-    nargile: [
-        { id: 60, name: "Nargile Standart", price: 350, img: "https://images.unsplash.com/photo-1595515119566-d2eaff6c7b31?w=800" },
-        { id: 61, name: "Nargile Lüle", price: 150, img: "https://images.unsplash.com/photo-1595515119566-d2eaff6c7b31?w=800" },
-        { id: 62, name: "Nargile Aroma", price: 145, img: "https://images.unsplash.com/photo-1595515119566-d2eaff6c7b31?w=800" }
+    nargileler: [
+        { id: 90, name: "Nargile (Standart)", price: 350, desc: "Premium standart nargile", img: "https://images.unsplash.com/photo-1595515119566-d2eaff6c7b31?w=800" },
+        { id: 91, name: "Nargile (Lüle Başlığı)", price: 150, desc: "Özel lüle başlığı", img: "https://images.unsplash.com/photo-1595515119566-d2eaff6c7b31?w=800" },
+        { id: 92, name: "Nargile Aromaları", price: 145, desc: "Çeşitli nargile aromaları", img: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=800" },
+        { id: 93, name: "Sigara", price: 130, desc: "Çeşitli sigara markaları", img: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=800" }
     ]
-
 };
+
 // ===== SEPET =====
 let cart = JSON.parse(localStorage.getItem('letrangerCart')) || [];
 
@@ -90,33 +114,28 @@ categoryCards.forEach(card => {
 });
 
 function openMenuDetail(category) {
-    // Kategori başlığını güncelle
-   const categoryNames = {
-    'yemekler': '🍔 Yemekler',
-    'tatlilar': '🍰 Tatlılar',
-    'sicak': '☕ Sıcak İçecekler',
-    'soguk': '🥤 Soğuk İçecekler',
-    'milkshake': '🥤 Milkshake',
-    'nargile': '💨 Nargile'
-};
+    const categoryNames = {
+        'kahveler': '☕ Sıcak İçecekler',
+        'kahvaltilar': '🍔 Yemekler',
+        'tatlilar': '🍰 Tatlılar',
+        'nargileler': '💨 Nargile & Tütün',
+        'caylar': '🍵 Çaylar',
+        'soguk-icecekler': '🥤 Soğuk İçecekler & Boba'
+    };
     
     detailCategoryTitle.textContent = categoryNames[category];
     
-    // Önce tüm menü içeriklerini gizle
     document.querySelectorAll('.menu-items').forEach(item => {
         item.classList.remove('active');
     });
     
-    // İlgili kategoriyi göster
     const targetCategory = document.querySelector(`[data-category-content="${category}"]`);
     targetCategory.classList.add('active');
     
-    // Menü öğelerini doldur
     fillMenuItems(category, targetCategory);
     
-    // Menü detayını göster
     menuDetailContainer.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Sayfa kaydırmayı engelle
+    document.body.style.overflow = 'hidden';
 }
 
 function fillMenuItems(category, container) {
@@ -127,7 +146,7 @@ function fillMenuItems(category, container) {
             const menuItemHTML = `
                 <div class="menu-item" data-id="${item.id}">
                     <div class="menu-item-image">
-                        <img src="${item.img}" alt="${item.name}">
+                        <img src="${item.img}" alt="${item.name}" loading="lazy">
                     </div>
                     <div class="menu-item-info">
                         <div class="menu-item-header">
@@ -136,7 +155,7 @@ function fillMenuItems(category, container) {
                             </div>
                             <div class="menu-item-price">₺${item.price}</div>
                         </div>
-                        <p class="menu-item-desc">${item.desc}</p>
+                        ${item.desc ? `<p class="menu-item-desc">${item.desc}</p>` : ''}
                         <div class="menu-item-footer">
                             <button class="add-to-cart" data-id="${item.id}">
                                 <i class="fas fa-cart-plus"></i> Sepete Ekle
@@ -148,7 +167,6 @@ function fillMenuItems(category, container) {
             container.innerHTML += menuItemHTML;
         });
         
-        // Sepete ekle butonlarına event listener ekle
         container.querySelectorAll('.add-to-cart').forEach(button => {
             button.addEventListener('click', function(e) {
                 e.stopPropagation();
@@ -161,109 +179,114 @@ function fillMenuItems(category, container) {
 
 // ===== SEPETE EKLEME =====
 function addToCart(itemId) {
-    // Tüm kategorilerde item'ı ara
     let itemToAdd = null;
-    let categoryFound = '';
     
     for (const category in menuData) {
         const item = menuData[category].find(item => item.id === itemId);
         if (item) {
-            itemToAdd = { ...item, category };
-            categoryFound = category;
+            itemToAdd = item;
             break;
         }
     }
     
     if (!itemToAdd) return;
     
-    // Sepette var mı kontrol et
     const existingItem = cart.find(item => item.id === itemId);
     
     if (existingItem) {
         existingItem.quantity += 1;
     } else {
-        itemToAdd.quantity = 1;
-        cart.push(itemToAdd);
+        cart.push({ ...itemToAdd, quantity: 1 });
     }
     
-    // Sepeti güncelle
     updateCart();
-    
-    // Kullanıcıya bildirim göster
-    showNotification(`${itemToAdd.name} sepete eklendi!`);
+    showNotification(`${itemToAdd.name} sepete eklendi! 🛒`);
 }
 
 // ===== SEPETİ GÜNCELLE =====
 function updateCart() {
-    // Yerel depolamaya kaydet
     localStorage.setItem('letrangerCart', JSON.stringify(cart));
-    
-    // Sepet içeriğini güncelle
-    renderCartItems();
-    
-    // Toplam fiyatı güncelle
+    updateCartDisplay();
+    updateCartBadge();
     updateCartTotal();
 }
 
-function renderCartItems() {
-    cartItemsContainer.innerHTML = '';
-    
+function updateCartDisplay() {
     if (cart.length === 0) {
         cartItemsContainer.innerHTML = '<p class="empty-cart">Sepetiniz boş</p>';
         return;
     }
     
+    cartItemsContainer.innerHTML = '';
+    
     cart.forEach(item => {
         const cartItemHTML = `
-            <div class="cart-item" data-id="${item.id}">
+            <div class="cart-item">
                 <div class="cart-item-info">
                     <h4>${item.name}</h4>
-                    <p class="cart-item-price">₺${item.price} x ${item.quantity}</p>
+                    <p>₺${item.price} x ${item.quantity}</p>
                 </div>
                 <div class="cart-item-controls">
-                    <button class="quantity-btn decrease">-</button>
-                    <span class="cart-item-quantity">${item.quantity}</span>
-                    <button class="quantity-btn increase">+</button>
-                    <button class="remove-item"><i class="fas fa-trash"></i></button>
+                    <button class="qty-btn decrease" data-id="${item.id}">-</button>
+                    <span class="qty-count">${item.quantity}</span>
+                    <button class="qty-btn increase" data-id="${item.id}">+</button>
+                    <button class="remove-btn" data-id="${item.id}">
+                        <i class="fas fa-trash"></i>
+                    </button>
                 </div>
             </div>
         `;
         cartItemsContainer.innerHTML += cartItemHTML;
     });
     
-    // Buton event listener'larını ekle
-    cartItemsContainer.querySelectorAll('.increase').forEach(button => {
-        button.addEventListener('click', function() {
-            const itemId = parseInt(this.closest('.cart-item').getAttribute('data-id'));
-            changeQuantity(itemId, 1);
+    // Event listeners
+    cartItemsContainer.querySelectorAll('.decrease').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const id = parseInt(btn.getAttribute('data-id'));
+            changeQuantity(id, -1);
         });
     });
     
-    cartItemsContainer.querySelectorAll('.decrease').forEach(button => {
-        button.addEventListener('click', function() {
-            const itemId = parseInt(this.closest('.cart-item').getAttribute('data-id'));
-            changeQuantity(itemId, -1);
+    cartItemsContainer.querySelectorAll('.increase').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const id = parseInt(btn.getAttribute('data-id'));
+            changeQuantity(id, 1);
         });
     });
     
-    cartItemsContainer.querySelectorAll('.remove-item').forEach(button => {
-        button.addEventListener('click', function() {
-            const itemId = parseInt(this.closest('.cart-item').getAttribute('data-id'));
-            removeFromCart(itemId);
+    cartItemsContainer.querySelectorAll('.remove-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const id = parseInt(btn.getAttribute('data-id'));
+            removeFromCart(id);
         });
     });
 }
 
-function changeQuantity(itemId, change) {
-    const itemIndex = cart.findIndex(item => item.id === itemId);
+function updateCartBadge() {
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    let badge = document.querySelector('.cart-badge');
     
-    if (itemIndex !== -1) {
-        cart[itemIndex].quantity += change;
-        
-        if (cart[itemIndex].quantity <= 0) {
-            cart.splice(itemIndex, 1);
+    if (totalItems > 0) {
+        if (!badge) {
+            badge = document.createElement('span');
+            badge.className = 'cart-badge';
+            cartButton.appendChild(badge);
         }
-        
+        badge.textContent = totalItems;
+    } else if (badge) {
+        badge.remove();
+    }
+}
+
+function changeQuantity(itemId, delta) {
+    const item = cart.find(i => i.id === itemId);
+    if (!item) return;
+    
+    item.quantity += delta;
+    
+    if (item.quantity <= 0) {
+        removeFromCart(itemId);
+    } else {
         updateCart();
     }
 }
@@ -286,7 +309,6 @@ function updateCartTotal() {
 
 // ===== BİLDİRİM GÖSTER =====
 function showNotification(message) {
-    // Bildirim elementini oluştur
     const notification = document.createElement('div');
     notification.className = 'notification';
     notification.textContent = message;
@@ -301,11 +323,12 @@ function showNotification(message) {
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         z-index: 9999;
         animation: slideIn 0.3s ease;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
     `;
     
     document.body.appendChild(notification);
     
-    // 3 saniye sonra kaldır
     setTimeout(() => {
         notification.style.animation = 'slideOut 0.3s ease';
         setTimeout(() => {
@@ -317,15 +340,13 @@ function showNotification(message) {
 }
 
 // ===== EVENT LISTENER'LAR =====
-// Menü detayını kapat
 closeDetailBtn.addEventListener('click', closeMenuDetail);
 
 function closeMenuDetail() {
     menuDetailContainer.classList.remove('active');
-    document.body.style.overflow = 'auto'; // Sayfa kaydırmayı geri aç
+    document.body.style.overflow = 'auto';
 }
 
-// Mobil menü toggle
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     hamburger.innerHTML = navLinks.classList.contains('active') 
@@ -333,7 +354,6 @@ hamburger.addEventListener('click', () => {
         : '<i class="fas fa-bars"></i>';
 });
 
-// Navbar linklerine tıklayınca mobil menüyü kapat
 navItems.forEach(item => {
     item.addEventListener('click', () => {
         navLinks.classList.remove('active');
@@ -341,7 +361,6 @@ navItems.forEach(item => {
     });
 });
 
-// Sepet modalını aç/kapat
 cartButton.addEventListener('click', (e) => {
     e.preventDefault();
     cartModal.classList.add('active');
@@ -351,7 +370,6 @@ closeCartBtn.addEventListener('click', () => {
     cartModal.classList.remove('active');
 });
 
-// Dışarı tıklayınca modalı kapat
 window.addEventListener('click', (e) => {
     if (e.target === cartModal) {
         cartModal.classList.remove('active');
@@ -361,7 +379,6 @@ window.addEventListener('click', (e) => {
     }
 });
 
-// Siparişi tamamla
 checkoutBtn.addEventListener('click', () => {
     if (cart.length === 0) {
         showNotification('Sepetiniz boş!');
@@ -375,34 +392,22 @@ checkoutBtn.addEventListener('click', () => {
     
     alert(`SİPARİŞ ÖZETİ:\n\n${orderSummary}\n\nTOPLAM: ₺${total.toFixed(2)}\n\nSiparişiniz alındı! Teşekkür ederiz.`);
     
-    // Sepeti temizle
     cart = [];
     updateCart();
     cartModal.classList.remove('active');
 });
 
-// Rezervasyon formu
 if (reservationForm) {
     reservationForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
-        // Basit form validasyonu
-        const formData = new FormData(reservationForm);
-        const name = formData.get('name') || 'İsim yok';
-        
-        showNotification(`Sayın ${name}, rezervasyonunuz alındı!`);
+        showNotification('Rezervasyonunuz alındı! En kısa sürede sizi arayacağız.');
         reservationForm.reset();
-        
-        // Gerçek uygulamada burada sunucuya veri gönderilir
-        // fetch('api/rezervasyon', { method: 'POST', body: formData })
     });
 }
 
-// Sayfa yüklendiğinde sepete yükle
 document.addEventListener('DOMContentLoaded', () => {
     updateCart();
     
-    // Scroll animasyonları için
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -417,7 +422,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
     
-    // Animasyonlu elementleri seç
     document.querySelectorAll('.category-card, .menu-item, .feature').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
@@ -426,7 +430,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// CSS animasyonları için style ekle
 const style = document.createElement('style');
 style.textContent = `
     @keyframes slideIn {
@@ -437,6 +440,83 @@ style.textContent = `
     @keyframes slideOut {
         from { transform: translateX(0); opacity: 1; }
         to { transform: translateX(100%); opacity: 0; }
+    }
+
+    .cart-badge {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background: #e74c3c;
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-item {
+        position: relative;
+    }
+
+    .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .cart-item-info h4 {
+        margin: 0 0 4px;
+        font-size: 14px;
+    }
+
+    .cart-item-info p {
+        margin: 0;
+        font-size: 13px;
+        color: #8B4513;
+    }
+
+    .cart-item-controls {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .qty-btn {
+        width: 28px;
+        height: 28px;
+        border: 1px solid #ddd;
+        background: white;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .qty-btn:hover {
+        background: #f5f5f5;
+    }
+
+    .qty-count {
+        min-width: 20px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .remove-btn {
+        background: none;
+        border: none;
+        color: #e74c3c;
+        cursor: pointer;
+        padding: 4px;
+        font-size: 14px;
     }
 `;
 document.head.appendChild(style);
