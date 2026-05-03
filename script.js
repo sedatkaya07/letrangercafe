@@ -14,20 +14,20 @@ const menuData = {
     ],
 
     tatlilar: [
-        { id: 10, name: "Marlenka", price: 300, desc: "Balkabaklı çok katlı pasta", img: "https://images.unsplash.com/photo-1601972599720-36938d4ecd31?w=800" },
-        { id: 11, name: "Fıstık Rüyası", price: 250, desc: "Antep fıstıklı özel pasta", img: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=800" },
-        { id: 12, name: "Profiterol Çikolatalı", price: 250, desc: "Kremalı ve çikolata soslu", img: "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=800" },
-        { id: 13, name: "Sufle Çikolatalı", price: 250, desc: "Sıcak çikolatalı sufle", img: "https://images.unsplash.com/photo-1624353365286-3f8d62dadadf?w=800" },
+        { id: 10, name: "Marlenka", price: 300, desc: "Balkabaklı çok katlı pasta", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSURPOeW6NqJbHXmAgqigpSPIcK8MyaHuc-3g&s" },
+        { id: 11, name: "Fıstık Rüyası", price: 250, desc: "Antep fıstıklı özel pasta", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZqhyUc1K5tf7kKDktaSd9VBnD91Zxu-2Pw&s" },
+        { id: 12, name: "Profiterol Çikolatalı", price: 250, desc: "Kremalı ve çikolata soslu", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYkA_ozHrN5GLLIayI_ty_DCIEXP02eXTyrw&s" },
+        { id: 13, name: "Sufle Çikolatalı", price: 250, desc: "Sıcak çikolatalı sufle", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR_ICwiZlxHLgYwXl2NuMka7h1CIK2mbNy6A&s" },
         { id: 14, name: "Mozaik Pasta", price: 250, desc: "Klasik mozaik pasta", img: "https://images.unsplash.com/photo-1606313564200-75fae8f0ad3b?w=800" },
-        { id: 15, name: "Cheesecake (Frambuaz)", price: 250, desc: "Frambuaz soslu cheesecake", img: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=800" },
-        { id: 16, name: "Nutellalı Pasta", price: 250, desc: "Fındıklı Nutella pasta", img: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800" },
-        { id: 17, name: "Tiramisu", price: 250, desc: "İtalyan klasiği tiramisu", img: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=800" },
-        { id: 18, name: "Red Velvet Cake", price: 250, desc: "Kadife dokulu kırmızı kek", img: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=800" },
-        { id: 19, name: "Pasta Latte Mono", price: 250, desc: "Özel pasta latte", img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" },
-        { id: 20, name: "Rella Cocostar", price: 250, desc: "Hindistan cevizli özel tatlı", img: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800" },
-        { id: 21, name: "Ağlayan Kek", price: 200, desc: "İçi dolu ıslak kek", img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" },
-        { id: 22, name: "Sütlaç", price: 200, desc: "Fırında sütlaç", img: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800" },
-        { id: 23, name: "Brownie", price: 150, desc: "Çikolatalı ıslak brownie", img: "https://images.unsplash.com/photo-1606313564200-75fae8f0ad3b?w=800" }
+        { id: 15, name: "Cheesecake (Frambuaz)", price: 250, desc: "Frambuaz soslu cheesecake", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgxss6oUqlQpp1CkGg0PVjyBMteeIUdo87-g&s" },
+        { id: 16, name: "Nutellalı Pasta", price: 250, desc: "Fındıklı Nutella pasta", img: "https://i.nefisyemektarifleri.com/2023/06/04/findikli-cikolatali-pasta-tarifi.jpg" },
+        { id: 17, name: "Tiramisu", price: 250, desc: "İtalyan klasiği tiramisu", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxgn-heQD-qt871TjeSc_kKIEs7rY8JSXhYg&s" },
+        { id: 18, name: "Red Velvet Cake", price: 250, desc: "Kadife dokulu kırmızı kek", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4dsJsOQqsYQKljkUD1ckQdXAGirK2Z3H67g&s" },
+        { id: 19, name: "Pasta Latte Mono", price: 250, desc: "Özel pasta latte", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHBT0B-KFM-pIW9PpsVaTCCOWvusAW0fhPSQ&s" },
+        { id: 20, name: "Rella Cocostar", price: 250, desc: "Hindistan cevizli özel tatlı", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3lBi8wbjzDwShlc93tCm805SLLEHP6XWVOQ&s" },
+        { id: 21, name: "Ağlayan Kek", price: 200, desc: "İçi dolu ıslak kek", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJu1bELoH993ruhdChykQHNiS7K29m4u53pQ&s" },
+        { id: 22, name: "Sütlaç", price: 200, desc: "Fırında sütlaç", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAbdoQuoZaBzkmYEzGWExUoO43q_G2WN3Ifg&s" },
+        { id: 23, name: "Brownie", price: 150, desc: "Çikolatalı ıslak brownie", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqYMiFHvlPbqzxgt0nQkvbamSkSTnG9GDj_Q&s" }
     ],
 
     kahveler: [
