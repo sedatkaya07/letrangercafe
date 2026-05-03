@@ -541,3 +541,52 @@ menuDetailForSwipe.addEventListener('touchend', function(e) {
         closeMenuDetail();
     }
 }, { passive: true });
+// ===== SEPET BUTONLARI =====
+// Navbar'daki Sepeti Görüntüle butonu
+const cartBtn = document.getElementById('cartBtn');
+const floatingCartBtn = document.getElementById('floatingCartBtn');
+
+if (cartBtn) {
+    cartBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        cartModal.classList.add('active');
+    });
+}
+
+if (floatingCartBtn) {
+    floatingCartBtn.addEventListener('click', () => {
+        cartModal.classList.add('active');
+    });
+}
+
+// Sepet badge'ini güncelleme (hem navbar hem floating için)
+function updateCartBadge() {
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    
+    // Navbar badge
+    let navbarBadge = document.querySelector('.cart-btn .cart-badge');
+    if (totalItems > 0) {
+        if (!navbarBadge) {
+            navbarBadge = document.createElement('span');
+            navbarBadge.className = 'cart-badge';
+            const cartLink = document.querySelector('.cart-btn');
+            if (cartLink) {
+                cartLink.style.position = 'relative';
+                cartLink.appendChild(navbarBadge);
+            }
+        }
+        navbarBadge.textContent = totalItems;
+    } else if (navbarBadge) {
+        navbarBadge.remove();
+    }
+    
+    // Floating button badge
+    let floatingBadge = document.getElementById('floatingCartBadge');
+    if (floatingBadge) {
+        floatingBadge.textContent = totalItems;
+        floatingBadge.style.display = totalItems > 0 ? 'flex' : 'none';
+    }
+}
+
+// Mevcut updateCart fonksiyonunun içinde updateCartBadge çağrılıyor zaten
+// Ama emin olmak için updateCart fonksiyonunu güncellemeye gerek yok
