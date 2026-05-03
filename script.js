@@ -2,15 +2,15 @@
 const menuData = {
 
     kahvaltilar: [
-        { id: 1, name: "Kavurma", price: 300, desc: "Özel kavurma", img: "https://images.unsplash.com/photo-1604908176997-431b4b2d2c24?w=800" },
-        { id: 2, name: "Köfte Ekmek", price: 300, desc: "Izgara köfte", img: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=800" },
-        { id: 3, name: "Burger", price: 300, desc: "Özel burger", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800" },
-        { id: 4, name: "Kebab Dürüm", price: 200, desc: "Adana dürüm", img: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800" },
-        { id: 5, name: "Sucuklu Kaşarlı Tost", price: 200, desc: "Bol sucuk ve kaşar", img: "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=800" },
-        { id: 6, name: "Makarna Çeşitleri", price: 160, desc: "Günlük makarna çeşitleri", img: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800" },
-        { id: 7, name: "Tavuk Dürüm", price: 150, desc: "Izgara tavuk dürüm", img: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800" },
-        { id: 8, name: "Çiğköfte", price: 150, desc: "Acılı çiğköfte dürüm", img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800" },
-        { id: 9, name: "Gözleme", price: 150, desc: "El açması taze gözleme", img: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=800" }
+        { id: 1, name: "Kavurma", price: 300, desc: "Özel kavurma", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiaU-pBwlD-tchFxf4C5G3togI5PX5GdTTlg&s" },
+        { id: 2, name: "Köfte Ekmek", price: 300, desc: "Izgara köfte", img: "https://image.hurimg.com/i/hurriyet/90/0x0/6863a1fc086465c9660c3dba.jpg" },
+        { id: 3, name: "Burger", price: 300, desc: "Özel burger", img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/33/37/8c/the-real-bite-irish-beef.jpg?w=900&h=500&s=1" },
+        { id: 4, name: "Kebab Dürüm", price: 200, desc: "Adana dürüm", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOlO5OgMHwCrBjcFnd6Fr7TToKvvmZgggEMQ&s" },
+        { id: 5, name: "Sucuklu Kaşarlı Tost", price: 200, desc: "Bol sucuk ve kaşar", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg_gHy9A8imuy5il8_xIC73_fcNOU-rlgz4g&s" },
+        { id: 6, name: "Makarna Çeşitleri", price: 160, desc: "Günlük makarna çeşitleri", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEXr1CpNCICJpBnDeOhLWaTyXnxStnufS1sA&s" },
+        { id: 7, name: "Tavuk Dürüm", price: 150, desc: "Izgara tavuk dürüm", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB34PY9hlp5Us2g7SxZ5AMPLzj3cT312M96w&s" },
+        { id: 8, name: "Çiğköfte", price: 150, desc: "Acılı çiğköfte dürüm", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDSmvXmiw-fQUAZaPz9CVXL1Vd-Xj6FBsHoQ&s" },
+        { id: 9, name: "Gözleme", price: 150, desc: "El açması taze gözleme", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqmLAbjDInSsrFOPiQE3U2rUd3eXEdhz6wA&s" }
     ],
 
     tatlilar: [
